@@ -1,3 +1,4 @@
+
 /* @jsx React.createElement */
 
 // @deno-types="https://denopkg.com/soremwar/deno_types/react/v16.13.1/react.d.ts"
@@ -26,6 +27,5 @@ addEventListener("fetch", (event) => {
   const response = new Response(ReactDOMServer.renderToString(<View />), {
     headers: { "content-type": "text/html" },
   });
-  .respondWith(response);
-});
-e
+ e.respondWith(response);
+}); 
